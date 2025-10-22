@@ -29,5 +29,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: user/app:latest
-          platforms: linux/amd64,linux/arm64
+          tags: ghcr.io/meson800/imessage:latest
+          platforms: linux/amd64

@@ -1,5 +1,5 @@
-#!/bin/bash
-build_tags=""
+#!/bin/sh
+build_tags="libheif"
 
 if [[ $(arch) == "arm64" && -z "$LIBRARY_PATH" && -d /opt/homebrew ]]; then
 	echo "Using /opt/homebrew for LIBRARY_PATH and CPATH"

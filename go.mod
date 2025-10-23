@@ -13,13 +13,13 @@ require (
 	github.com/sahilm/fuzzy v0.1.0
 	github.com/strukturag/libheif v1.19.5
 	github.com/tidwall/gjson v1.17.0
-	go.mau.fi/util v0.2.1
+	go.mau.fi/util v0.2.2-0.20231228160422-22fdd4bbddeb
 	golang.org/x/crypto v0.29.0
 	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f
 	golang.org/x/image v0.22.0
 	maunium.net/go/mauflag v1.0.0
 	maunium.net/go/maulogger/v2 v2.4.1
-	maunium.net/go/mautrix v0.16.2
+	maunium.net/go/mautrix v0.16.3-0.20250503191143-e173d97939b4
 )
 
 require (

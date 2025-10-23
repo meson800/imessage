@@ -49,6 +49,8 @@ github.com/yuin/goldmark v1.6.0 h1:boZcn2GTjpsynOsC0iJHnBWa4Bi0qzfJjthwauItG68=
 github.com/yuin/goldmark v1.6.0/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
 go.mau.fi/util v0.2.1 h1:eazulhFE/UmjOFtPrGg6zkF5YfAyiDzQb8ihLMbsPWw=
 go.mau.fi/util v0.2.1/go.mod h1:MjlzCQEMzJ+G8RsPawHzpLB8rwTo3aPIjG5FzBvQT/c=
+go.mau.fi/util v0.2.2-0.20231228160422-22fdd4bbddeb h1:Is+6vDKgINRy9KHodvi7NElxoDaWA8sc2S3cF3+QWjs=
+go.mau.fi/util v0.2.2-0.20231228160422-22fdd4bbddeb/go.mod h1:tiBX6nxVSOjU89jVQ7wBh3P8KjM26Lv1k7/I5QdSvBw=
 go.mau.fi/zeroconfig v0.1.2 h1:DKOydWnhPMn65GbXZOafgkPm11BvFashZWLct0dGFto=
 go.mau.fi/zeroconfig v0.1.2/go.mod h1:NcSJkf180JT+1IId76PcMuLTNa1CzsFFZ0nBygIQM70=
 golang.org/x/crypto v0.29.0 h1:L5SG1JTTXupVV3n6sUqMTeWbjAyfPwoda2DLX8J8FrQ=
@@ -78,3 +80,5 @@ maunium.net/go/mautrix v0.16.1-0.20241127170113-4b4e60da048d h1:pZ2XsCIjSHGOA5Ey
 maunium.net/go/mautrix v0.16.1-0.20241127170113-4b4e60da048d/go.mod h1:XAjE9pTSGcr6vXaiNgQGiip7tddJ8FQV1a29u2QdBG4=
 maunium.net/go/mautrix v0.16.2 h1:a6GUJXNWsTEOO8VE4dROBfCIfPp50mqaqzv7KPzChvg=
 maunium.net/go/mautrix v0.16.2/go.mod h1:YL4l4rZB46/vj/ifRMEjcibbvHjgxHftOF1SgmruLu4=
+maunium.net/go/mautrix v0.16.3-0.20250503191143-e173d97939b4 h1:54y/T8ukHgmQsaSYoRWwhxLAijVVyLbOsTsglyjZ7Ro=
+maunium.net/go/mautrix v0.16.3-0.20250503191143-e173d97939b4/go.mod h1:gCgLw/4c1a8QsiOWTdUdXlt5cYdE0rJ9wLeZQKPD58Q=

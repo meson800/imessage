@@ -13,13 +13,13 @@ require (
 	github.com/sahilm/fuzzy v0.1.0
 	github.com/strukturag/libheif v1.19.5
 	github.com/tidwall/gjson v1.17.0
-	go.mau.fi/util v0.2.2-0.20231228160422-22fdd4bbddeb
+	go.mau.fi/util v0.2.1
 	golang.org/x/crypto v0.29.0
 	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f
 	golang.org/x/image v0.22.0
 	maunium.net/go/mauflag v1.0.0
 	maunium.net/go/maulogger/v2 v2.4.1
-	maunium.net/go/mautrix v0.16.3-0.20250503191143-e173d97939b4
+	maunium.net/go/mautrix v0.16.1-0.20241127170113-4b4e60da048d
 )
 
 require (
@@ -39,3 +39,5 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace maunium.net/go/mautrix => github.com/meson800/mautrix-go v0.16.1-0.20251023014854-ce80153d2e90

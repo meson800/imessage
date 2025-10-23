@@ -22,6 +22,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"strings"
 
 	"maunium.net/go/mautrix"
 	"maunium.net/go/mautrix/appservice"
@@ -47,6 +48,7 @@ func (user *User) CustomIntent() *appservice.IntentAPI {
 	return user.DoublePuppetIntent
 }
 
+// See https://github.com/mautrix/go/blob/v0.16.x/bridge/doublepuppet.go
 func (user *User) initDoublePuppet() {
 	var err error
 	if len(user.AccessToken) > 0 {
@@ -83,8 +85,15 @@ func (user *User) loginWithSharedSecret() error {
 		DeviceID:                 id.DeviceID(user.bridge.Config.IMessage.BridgeName()),
 		InitialDeviceDisplayName: user.bridge.Config.IMessage.BridgeName(),
 	}
+
+	const asTokenModePrefix = "as_token:"
+	asToken, isAsToken := strings.CutPrefix(loginSecret, asTokenModePrefix)
+
 	if loginSecret == "appservice" {
 		client.AccessToken = user.bridge.AS.Registration.AppToken
+		req.Type = mautrix.AuthTypeAppservice
+	} else if isAsToken {
+		client.AccessToken = asToken
 		req.Type = mautrix.AuthTypeAppservice
 	} else {
 		mac := hmac.New(sha512.New, []byte(loginSecret))

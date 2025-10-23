@@ -115,7 +115,7 @@ func (user *User) newDoublePuppetIntent() (*appservice.IntentAPI, error) {
 	return ia, nil
 }
 
-func (user *User) clearCustomMXID() {
+func (user *User) ClearCustomMXID() {
 	user.AccessToken = ""
 	user.NextBatch = ""
 	user.DoublePuppetIntent = nil
@@ -123,21 +123,21 @@ func (user *User) clearCustomMXID() {
 
 func (user *User) startCustomMXID() error {
 	if len(user.AccessToken) == 0 {
-		user.clearCustomMXID()
+		user.ClearCustomMXID()
 		return nil
 	}
 	intent, err := user.newDoublePuppetIntent()
 	if err != nil {
-		user.clearCustomMXID()
+		user.ClearCustomMXID()
 		return fmt.Errorf("failed to create double puppet intent: %w", err)
 	}
 	resp, err := intent.Whoami()
 	if err != nil {
-		user.clearCustomMXID()
+		user.ClearCustomMXID()
 		return fmt.Errorf("failed to ensure double puppet token is valid: %w", err)
 	}
 	if resp.UserID != user.MXID {
-		user.clearCustomMXID()
+		user.ClearCustomMXID()
 		return ErrMismatchingMXID
 	}
 	user.DoublePuppetIntent = intent

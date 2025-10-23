@@ -275,6 +275,8 @@ bridge:
         default: false
         # Whether or not to use MSC2409/MSC3202 instead of /sync long polling for receiving encryption-related data.
         appservice: false
+        # Whether to use MSC4190
+        msc4190: false
         # Require encryption, drop any unencrypted messages.
         require: false
         # Enable key sharing? If enabled, key requests for rooms where users are in will be fulfilled.

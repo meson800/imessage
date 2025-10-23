@@ -40,4 +40,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace maunium.net/go/mautrix => github.com/meson800/mautrix-go v0.16.1-0.20251023135532-aa68e149ab49
+replace maunium.net/go/mautrix => github.com/meson800/mautrix-go v0.16.1-0.20251023140343-cd7b0eb3e79a

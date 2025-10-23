@@ -123,6 +123,7 @@ func DoUpgrade(helper *up.Helper) {
 	helper.Copy(up.Bool, "bridge", "encryption", "allow")
 	helper.Copy(up.Bool, "bridge", "encryption", "default")
 	helper.Copy(up.Bool, "bridge", "encryption", "appservice")
+	helper.Copy(up.Bool, "bridge", "encryption", "msc4190")
 	helper.Copy(up.Bool, "bridge", "encryption", "require")
 	helper.Copy(up.Bool, "bridge", "encryption", "delete_keys", "delete_outbound_on_ack")
 	helper.Copy(up.Bool, "bridge", "encryption", "delete_keys", "dont_store_outbound")
